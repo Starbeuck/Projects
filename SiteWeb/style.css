@@ -1,0 +1,52 @@
+body {
+    /* pour laisser la place au menu*/
+  padding-top: 50px;
+}
+
+.starter{
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.jumbotron{
+    background-image: url("img/projet.png");
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    background: #EA6B66;
+    color: black;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: auto;
+  padding: 12px;
+  width: auto;
+}
+
+.collapse {
+    padding: 0px;
+}
+
+.contenu{
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.from{
+    height: 45px;
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+}

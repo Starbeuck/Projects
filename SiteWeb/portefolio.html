@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- pour IE, verification de l'utilisation du dernier moteur de rendu -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- pour mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- donnees -->
+    <meta name="description" content="Solenn's WebSite">
+    <meta name="author" content="Solenn KEROULLAS">
+
+    <!-- lien vers l'icone -->
+    <link rel="icon" href="favicon.ico">
+
+    <title>Solenn KEROULLAS</title>
+
+    <!-- Bootstrap -->
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- lien vers css -->
+    <link href="style.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <link href="timeline.css" rel="stylesheet">
+    <!-- pour les navigateurs ne prenant pas en charge HTML5 et les media Queries de CSS3 -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- pour le menu de navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- si mobile-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: 18px; margin-bottom: 10px;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+
+                <!-- logo du site-->
+                <span>
+                        <!-- si mobile -->
+                        <a class="navbar-brand navbar-toggle collapsed" style="float:left;" href="index.html"><img src="SK.png" atl="logo SK"></a> 
+                        
+                        <!-- si navigateur classique-->
+                        <a class="navbar-brand navbar-collapse collapse" href="index.html"><img class="" src="logo.png" atl="logo Solenn KEROULLAS"></a> 
+                    </span>
+            </div>
+
+            <!-- menu pour un navigateur -->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="/cv.html">Mon CV</a></li>
+                    <li class="active"><a href="#">Portefolio</a></li>
+                    <li><a href="/travaux.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin du menu de navigation -->
+
+    <!-- ajout d'une ligne horizontale -->
+    <hr class="featurette-divider">
+
+    <div class="container">
+
+        <!-- ajout d'une ligne horizontale -->
+        <hr class="featurette-divider">
+
+        <!-- ajout des projets -->
+        <div class="row">
+
+            <!-- ajout du site web -->
+            <div class="col-xs-12 col-md-6">
+                <figure>
+                    <!-- ajout d'une image-->
+                    <img src="img/siteweb.png" alt="image programmation" class="img-rounded img-responsive"> <br>
+
+                    <!-- ajout d'une légende -->
+                    <figcaption>
+                        <h2>Mon site</h2>
+                        <p>En effet, mon premier "gros" projet personnel est la réalisation de ce site web... Si vous voulez en savoir plus sur la façon dont il est réalisé, le code source est disponible sur mon répertoire GitHub. Et si vous avez des questions, n'hésitez pas à me contacter.</p>
+                        <p><a class="btn btn-secondary" href="https://github.com/Starbeuck/Projects/tree/master/SiteWeb" target="_blank" role="button">Voir le code source &raquo;</a></p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <!-- fin d'ajout du site web -->
+
+            <!-- ajout du second projet -->
+            <div class="col-xs-12 col-md-6">
+                <figure>
+                    <!-- ajout d'une image-->
+                    <img src="img/projet2.png" alt="image programmation" class="img-rounded img-responsive"> <br>
+
+                    <!-- ajout d'une légende -->
+                    <figcaption>
+                        <h2>En cours...</h2>
+                        <p>Mon site web me prend beaucoup de temps, mais j'ai beaucoup d'idées et d'autres projets ! Soyez patients ! </p>
+                        <p><a class="btn btn-secondary" href="#" role="button">En cours... &raquo;</a></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- fin d'ajout du second projet -->
+        </div>
+
+        <!-- ajout d'une ligne horizontale -->
+        <hr class="featurette-divider">
+
+        <!-- redirection vers mes cours -->
+        <div class="row featurette">
+            <h2 class="featurette-heading">Mes cours<span class="text-muted"> TP de l'ESIR.</span></h2>
+            <p class="lead">Durant mon cursus à l'ESIR, je suis amenée à réaliser de nombreux TP sur différents sujets : C++, Assembleur, Python... L'entièreté de mon travail est disponible sur mon répertoire GitHub, accessible à l'adresse suivante.</p>
+            <p><a class="btn btn-secondary" href="https://github.com/Starbeuck/ESIR1" target="_blank" role="button">Allez sur GitHub&raquo;</a></p>
+        </div>
+
+        <!-- ajout d'une ligne horizontale -->
+        <hr class="featurette-divider">
+
+    </div>
+
+    <!-- ajout d'un footer-->
+    <footer class="bd-footer text-muted">
+        <div class="container bd-footer-links">
+            <p>Copyright © 2017 - Tous droits de reproduction réservés</p>
+        </div>
+    </footer>
+    <!-- fin du footer -->
+
+
+    <!-- ajout du javascript en fin de page pour ne pas retarder le telechargement de la page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
