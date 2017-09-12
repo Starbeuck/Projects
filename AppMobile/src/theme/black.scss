@@ -1,0 +1,30 @@
+﻿// take the black pill
+$black-background: #e5dcdf;
+$black-light: #000000;
+$black-dark: #808080;
+
+.black-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $black-dark;
+  }
+
+  .button {
+    color: white;
+    background-color: $black-light;
+  }
+
+  .toolbar-background {
+    background-color: $black-light;
+  }
+
+  ion-content {
+    background-color: $black-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($black-background, 1.5%);
+    }
+  }
+}

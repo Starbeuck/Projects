@@ -1,0 +1,30 @@
+﻿// take the orange pill
+$orange-background: #ffe0c6;
+$orange-light: #ff9107;
+$orange-dark: #000000;
+
+.orange-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $orange-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $orange-light;
+  }
+
+  .toolbar-background {
+    background-color: $orange-light;
+  }
+
+  ion-content {
+    background-color: $orange-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($orange-background, 1.5%);
+    }
+  }
+}

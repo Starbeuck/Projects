@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/theming/
+﻿// http://ionicframework.com/docs/theming/
 
 
 // App Global Sass
@@ -11,6 +11,21 @@
 // Shared Sass variables, which can be used to adjust Ionic's
 // default Sass variables, belong in "theme/variables.scss".
 //
+
+@import "theme/blue";
+@import "theme/red";
+@import "theme/green";
+@import "theme/yellow";
+@import "theme/purple";
+@import "theme/grey";
+@import "theme/black";
+@import "theme/blackorange";
+@import "theme/blackblue";
+@import "theme/blackred";
+@import "theme/dark-red";
+@import "theme/marron";
+@import "theme/orange";
+@import "theme/white";
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.

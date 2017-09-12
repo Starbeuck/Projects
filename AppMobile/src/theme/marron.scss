@@ -1,0 +1,30 @@
+﻿// take the marron pill
+$marron-background: #ffe0c6;
+$marron-light: #c95b00;
+$marron-dark: #000000;
+
+.marron-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $marron-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $marron-light;
+  }
+
+  .toolbar-background {
+    background-color: $marron-light;
+  }
+
+  ion-content {
+    background-color: $marron-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($marron-background, 1.5%);
+    }
+  }
+}

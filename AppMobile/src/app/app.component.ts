@@ -6,24 +6,30 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CameraPage } from '../pages/camera/camera';
+import { SettingPage } from '../pages/setting/setting';
+import { SettingService } from '../pages/setting/settingservice';
 @Component({
-  templateUrl: 'app.html'
+    templateUrl: 'app.html',
+    providers: [SettingService]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  chosenTheme: String;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-    this.initializeApp();
-
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private _settings: SettingService) {
+      this._settings.getTheme().subscribe(val => this.chosenTheme = val);
+      this.initializeApp();
+      
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Camera', component: CameraPage }
+      { title: 'Camera', component: CameraPage },
+      { title : 'Setting', component: SettingPage }
     ];
 
   }

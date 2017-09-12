@@ -1,0 +1,30 @@
+﻿// take the orb pill
+$orb-background: #ffc99b;
+$orb-light: #000000;
+$orb-dark: #FF7400;
+
+.orb-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $orb-dark;
+  }
+
+  .button {
+    color: #FF7400;
+    background-color: $orb-light;
+  }
+
+  .toolbar-background {
+    background-color: $orb-light;
+  }
+
+  ion-content {
+    background-color: $orb-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($orb-background, 1.5%);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿// take the blub pill
+$blub-background: #aaf0ff;
+$blub-light: #000000;
+$blub-dark: #00d2ff;
+
+.blub-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $blub-dark;
+  }
+
+  .button {
+    color: #00d2ff;
+    background-color: $blub-light;
+  }
+
+  .toolbar-background {
+    background-color: $blub-light;
+  }
+
+  ion-content {
+    background-color: $blub-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($blub-background, 1.5%);
+    }
+  }
+}

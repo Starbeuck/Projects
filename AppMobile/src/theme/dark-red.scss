@@ -1,0 +1,30 @@
+﻿// take the reb pill
+$reb-background: #fbc1c1;
+$reb-light: #FF0000;
+$reb-dark: #74000e;
+
+.reb-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $reb-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $reb-background;
+  }
+
+  .toolbar-background {
+    background-color: $reb-light;
+  }
+
+  ion-content {
+    background-color: $reb-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($reb-background, 1.5%);
+    }
+  }
+}

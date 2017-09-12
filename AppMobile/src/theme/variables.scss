@@ -1,4 +1,4 @@
-// Ionic Variables and Theming. For more info, please see:
+﻿// Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
 // Font path is used to include ionicons,
@@ -22,7 +22,15 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+// take the red pill
+$red-background: #fff6f6;
+$red-light: #ffa99c;
+$red-dark: #74000e;
 
+// take the blue pill
+$blue-background: #f6f6ff;
+$blue-light: #53e1ff;
+$blue-dark: #0034a7;
 
 
 // Named Color Variables
@@ -40,6 +48,7 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222
 );
+
 
 
 // App iOS Variables

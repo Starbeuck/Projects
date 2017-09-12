@@ -1,0 +1,30 @@
+﻿// take the grey pill
+$grey-background: #e5dcdf;
+$grey-light: #909090;
+$grey-dark: #2f2f2f;
+
+.grey-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $grey-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $grey-light;
+  }
+
+  .toolbar-background {
+    background-color: $grey-light;
+  }
+
+  ion-content {
+    background-color: $grey-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($grey-background, 1.5%);
+    }
+  }
+}

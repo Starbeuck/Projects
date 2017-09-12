@@ -14,4 +14,33 @@
   </p>
   <img [src]="_DomSanitizationService.bypassSecurityTrustUrl(cameraData)" *ngIf="photoTaken">
   <div id="rectangle"></div>
+
+  <button (click)="showData = !showData" ion-button>Choose a move !</button>
+  <ion-list *ngIf="showData" style="height:100px; overflow:auto;">
+    <ion-item> <ion-icon name="arrow-round-up"></ion-icon> 1 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-up"></ion-icon> 2 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-up"></ion-icon> 3 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-up"></ion-icon> 4 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-up"></ion-icon> 5 </ion-item>
+
+    <ion-item> <ion-icon name="undo"></ion-icon> 1 </ion-item>
+    <ion-item> <ion-icon name="undo"></ion-icon> 2 </ion-item>
+    <ion-item> <ion-icon name="undo"></ion-icon> 3 </ion-item>
+    <ion-item> <ion-icon name="undo"></ion-icon> 4 </ion-item>
+
+    <ion-item> <ion-icon name="redo"></ion-icon> 1 </ion-item>
+    <ion-item> <ion-icon name="redo"></ion-icon> 2 </ion-item>
+    <ion-item> <ion-icon name="redo"></ion-icon> 3 </ion-item>
+    <ion-item> <ion-icon name="redo"></ion-icon> 4 </ion-item>
+
+    <ion-item> <ion-icon name="arrow-round-back"></ion-icon> 1 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-back"></ion-icon> 2 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-back"></ion-icon> 3 </ion-item>
+    
+    <ion-item> <ion-icon name="arrow-round-forward"></ion-icon> 1 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-forward"></ion-icon> 2 </ion-item>
+    <ion-item> <ion-icon name="arrow-round-forward"></ion-icon> 3 </ion-item>
+    
+  </ion-list>
+
 </ion-content>

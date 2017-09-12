@@ -1,0 +1,30 @@
+﻿// take the white pill
+$white-background: #dfdfdf;
+$white-light: white;
+$white-dark: #000000;
+
+.white-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $white-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $white-light;
+  }
+
+  .toolbar-background {
+    background-color: $white-light;
+  }
+
+  ion-content {
+    background-color: $white-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($white-background, 1.5%);
+    }
+  }
+}

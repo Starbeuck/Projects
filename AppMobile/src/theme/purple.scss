@@ -1,0 +1,30 @@
+﻿// take the purple pill
+$purple-background: #ecdeff;
+$purple-light: #9e53ff;
+$purple-dark: #8c00a7;
+
+.purple-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $purple-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $purple-light;
+  }
+
+  .toolbar-background {
+    background-color: $purple-light;
+  }
+
+  ion-content {
+    background-color: $purple-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($purple-background, 1.5%);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+﻿<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Setting</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="settings">
+  <ion-list>
+    <ion-item>
+      <ion-label>Theme</ion-label>
+      <ion-select (ionChange)="setTheme($event)">
+        <ion-option *ngFor='let theme of availableThemes'
+                    [value]="theme.className"
+                    [selected]="theme.className === selected">
+          {{theme.prettyName}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>

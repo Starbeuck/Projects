@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { CameraPage } from '../pages/camera/camera';
+import { SettingPage } from '../pages/setting/setting';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +18,8 @@ import { SQLite } from '@ionic-native/sqlite';
     MyApp,
     HomePage,
     ListPage,
-    CameraPage
+    CameraPage,
+    SettingPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { SQLite } from '@ionic-native/sqlite';
     MyApp,
     HomePage,
     ListPage,
-    CameraPage
+    CameraPage,
+    SettingPage
   ],
   providers: [
     StatusBar,

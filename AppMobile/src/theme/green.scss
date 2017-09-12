@@ -1,0 +1,32 @@
+﻿
+// take the green pill
+$green-background: #F6FFF9;
+$green-light: #53FF67;
+$green-dark: #00a757;
+
+
+.green-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $green-dark;
+  }
+
+  .button {
+    color: white;
+    background-color: $green-dark;
+  }
+
+  .toolbar-background {
+    background-color: $green-light;
+  }
+
+  ion-content {
+    background-color: $green-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($green-background, 1.5%);
+    }
+  }
+}

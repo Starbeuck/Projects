@@ -1,0 +1,30 @@
+﻿// take the redb pill
+$redb-background: #f9c9c9;
+$redb-light: #000000;
+$redb-dark: #FF0000;
+
+.redb-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $redb-dark;
+  }
+
+  .button {
+    color: #FF0000;
+    background-color: $redb-light;
+  }
+
+  .toolbar-background {
+    background-color: $redb-light;
+  }
+
+  ion-content {
+    background-color: $redb-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($redb-background, 1.5%);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿// take the red pill
+$red-background: #fff6f6;
+$red-light: #ffa99c;
+$red-dark: #74000e;
+
+.red-theme {
+  h1, h2, h3, h4, h5, h6,
+  .toolbar-title {
+    color: $red-dark;
+  }
+
+  .button {
+    color: black;
+    background-color: $red-background;
+  }
+
+  .toolbar-background {
+    background-color: $red-light;
+  }
+
+  ion-content {
+    background-color: $red-background;
+  }
+
+  ion-list {
+    .item {
+      background-color: darken($red-background, 1.5%);
+    }
+  }
+}

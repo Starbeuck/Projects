@@ -1,5 +1,5 @@
 ﻿import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { Camera } from '@ionic-native/camera';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -11,10 +11,9 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class CameraPage {
     cameraData: string;
     photoTaken: boolean;
-    cameraUrl: string;
-    photoSelected: boolean;
+    showData: boolean = false;
 
-    constructor(private navCtrl: NavController, private _DomSanitizationService: DomSanitizer, private Camera: Camera) {
+    constructor(private navCtrl: NavController, private _DomSanitizationService: DomSanitizer, private Camera: Camera, public modalCtrl: ModalController) {
         this.photoTaken = false;
     }
 
@@ -26,7 +25,6 @@ export class CameraPage {
         this.Camera.getPicture(options).then((imageData) => {
             this.cameraData = 'data:image/jpeg;base64,' + imageData;
             this.photoTaken = true;
-            this.photoSelected = false;
         }, (err) => {
             // Handle error
         });
