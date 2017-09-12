@@ -1,33 +1,38 @@
 ﻿import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
     selector: 'page-camera',
-    templateUrl: 'camera.html'
+    templateUrl: 'camera.html',
+    styleUrls: ['/camera.css'],
 })
 export class CameraPage {
-    public base64Image: string;
+    cameraData: string;
+    photoTaken: boolean;
+    cameraUrl: string;
+    photoSelected: boolean;
 
-    constructor(public navCtrl: NavController, private camera: Camera) {
-
+    constructor(private navCtrl: NavController, private _DomSanitizationService: DomSanitizer, private Camera: Camera) {
+        this.photoTaken = false;
     }
 
     takePicture() {
-
-        this.camera.getPicture({
-            sourceType: this.camera.PictureSourceType.CAMERA,
-            destinationType: this.camera.DestinationType.DATA_URL,
-            encodingType: this.camera.EncodingType.JPEG,
-            mediaType: this.camera.MediaType.PICTURE
-            //      targetWidth: 1000,
-            //      targetHeight: 1000
-        }).then((imageData) => {
-            // imageData is a base64 encoded string
-            this.base64Image = "data:image/jpeg;base64," + imageData;
+        var options = {
+            sourceType: this.Camera.PictureSourceType.CAMERA,
+            destinationType: this.Camera.DestinationType.DATA_URL
+        };
+        this.Camera.getPicture(options).then((imageData) => {
+            this.cameraData = 'data:image/jpeg;base64,' + imageData;
+            this.photoTaken = true;
+            this.photoSelected = false;
         }, (err) => {
-            console.log(err);
+            // Handle error
         });
+    }
 
+    get imgBase64() {
+        return this._DomSanitizationService.bypassSecurityTrustUrl('data:image/png;base64,$SomeBase64StringFetchedSomehow');
     }
 }

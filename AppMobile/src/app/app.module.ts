@@ -10,6 +10,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Camera } from '@ionic-native/camera';
+import { SQLite } from '@ionic-native/sqlite';
 
 @NgModule({
   declarations: [
@@ -31,8 +32,9 @@ import { Camera } from '@ionic-native/camera';
   ],
   providers: [
     StatusBar,
-     SplashScreen,
-     Camera,
+    SplashScreen,
+    Camera,
+    SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

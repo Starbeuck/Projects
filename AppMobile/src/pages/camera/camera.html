@@ -12,4 +12,6 @@
     Take a picture !
     <button ion-button (click)="takePicture()">Take a Picture</button>
   </p>
+  <img [src]="_DomSanitizationService.bypassSecurityTrustUrl(cameraData)" *ngIf="photoTaken">
+  <div id="rectangle"></div>
 </ion-content>
